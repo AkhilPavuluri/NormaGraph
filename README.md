@@ -8,6 +8,16 @@ The system is designed with a clear separation between **ingestion**, **represen
 
 By constructing a **Decision Graph** over document content — clauses, authorities, relationships — it enables precise, explainable querying beyond traditional flat-text retrieval.
 
+### Screenshots
+
+**Landing page** — hero with ingestion, Decision Graph, and Orchestrator pillars.
+
+![NormaGraph landing page: Decision Graph for Policy Intelligence](media/normagraph-landing.png)
+
+**Query workspace** — orchestrated retrieval UI (sidebar, analysis history, query input).
+
+![NormaGraph query workspace: Query your Decision Graph](media/normagraph-query-workspace.png)
+
 ---
 
 ## Why NormaGraph?
@@ -219,4 +229,3 @@ Defined in [`pyproject.toml`](./pyproject.toml) and [`VERSION`](./VERSION).
 ## License
 
 MIT — see [LICENSE](./LICENSE).
-# NormaGraph
