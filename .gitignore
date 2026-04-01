@@ -1,0 +1,238 @@
+# ============================================================================
+# NormaGraph — unified .gitignore
+# ============================================================================
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor Settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ============================================================================
+# Python
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual Environments
+.venv/
+venv/
+env/
+env.bak/
+ENV/
+.ENV/
+
+# Python Testing & Coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.hypothesis/
+
+# Python Build & Distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# ============================================================================
+# Node.js / Frontend
+# ============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+.turbo/
+.vercel/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+.cache/
+.parcel-cache/
+
+# Frontend Testing
+coverage/
+.nyc_output/
+
+# ============================================================================
+# Environment & Configuration
+# ============================================================================
+.env
+.env.*
+!.env.example
+.envrc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Credentials (keep .env.example)
+*.key
+*.pem
+*.p12
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!**/tsconfig.json
+
+# ============================================================================
+# Databases & Data Files
+# ============================================================================
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# ============================================================================
+# Logs & Temporary Files
+# ============================================================================
+*.log
+*.log.*
+logs/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Application specific logs
+pipeline_debug.log
+normagraph_observability.log
+*.log
+
+# ============================================================================
+# Caches & Generated Data
+# ============================================================================
+cache/
+cache/**/*.pkl
+cache/**/*.json
+cache/**/*.pickle
+.llm_cache/
+*.cache
+
+# BigQuery exports
+*.csv
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!**/tsconfig.json
+
+# ============================================================================
+# Archives & Compressed Files
+# ============================================================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.gz
+
+# ============================================================================
+# Project Specific
+# ============================================================================
+# ALL source documents should be in GCS, NOT in git
+# No local data directory needed - pipeline reads directly from GCS
+
+# Ingestion outputs (processed data - can be regenerated)
+ingestion/output/
+backend/ingestion/output/
+!backend/ingestion/output/.gitkeep
+
+# Cache directories
+backend/ingestion/cache/
+backend/ingestion/__pycache__/
+backend/ingestion/**/__pycache__/
+
+# Temporary files
+backend/ingestion/temp_input_comparison/
+backend/ingestion/pipeline_debug.log
+*.log
+
+# Evaluation results
+evaluation_results.json
+*.results.json
+
+# Test outputs
+.pytest_cache/
+test-results/
+test-reports/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================================================
+# IDE & Tools
+# ============================================================================
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# Cloud & Deployment
+# ============================================================================
+.serverless/
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Google Cloud
+.gcloud/
+service-account-*.json
+*-key.json
+!**/pdf-viewer-key.json.example
+
+# ============================================================================
+# Documentation Build
+# ============================================================================
+docs/_build/
+site/

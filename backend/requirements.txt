@@ -1,0 +1,23 @@
+# NormaGraph backend — API, ingestion, retrieval
+
+# Core dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# Google Cloud
+google-cloud-bigquery>=3.12.0
+google-cloud-aiplatform>=1.38.0
+google-cloud-storage>=2.10.0
+google-generativeai>=0.3.0
+
+# Vector database
+qdrant-client>=1.7.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional: For local embeddings (if not using Google)
+# sentence-transformers>=2.2.0
+# torch>=2.0.0
+
